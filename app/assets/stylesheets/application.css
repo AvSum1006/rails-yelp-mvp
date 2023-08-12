@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+.navbar {
+  background-color: rgba(95, 158, 160)
+}
+
+ .header {
+  /* background-image: url('../images/restaurant1.jpeg'); */
+  background-position: center;
+  background-color: rgba(95, 158, 160, 0.7);
+}
+
+ .reviews {
+  background-color: rgba(95, 158, 160, 0.5);
+ }
+
+ .restaurants {
+  background-color: rgba(95, 158, 160, 0.1);
+ }

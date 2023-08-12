@@ -1,0 +1,15 @@
+
+
+<h1 class="header text-center p-3">All restaurants</h1>
+
+<div>
+  <ul>
+    <div class="p-3">
+      <% @restaurants.each do |restaurant| %>
+      <li  class="restaurants d-flex justify-content-between shadow p-3 mb-2 rounded inline"><%= link_to restaurant.name, restaurant_path(restaurant), style: "text-decoration: none;" %>
+        <%= link_to 'Review this restaurant', new_restaurant_review_path(restaurant), class: "btn btn-primary my-2 my-sm-0", style: "text-decoration: none; color: white;" %>
+      </li>
+    <% end %>
+    </div>
+  </ul>
+</div>

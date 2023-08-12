@@ -1,0 +1,19 @@
+
+<div class="header text-center p-3">
+  <h1><%= @restaurant.name %></h1>
+  <p><strong>Category :</strong> <%= @restaurant.category.capitalize %></p>
+  <p><strong>Address :</strong> <%= @restaurant.address%></p>
+</div>
+<div class="text-center p-3">
+  <h2 class="reviews shadow p-3 mb-5 rounded inline">All reviews</h2>
+  <div class="d-flex justify-content-center">
+    <ul>
+      <% @review.each do |review| %>
+        <li class="shadow p-3 mb-5 reviews rounded inline" style="list-style-type: none; height: 200px;" ><strong> <%= review.created_at.strftime("%d/%m/%y")%></strong>
+        <%= "⭐" * review.rating %>
+        <p><%= review.content %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
